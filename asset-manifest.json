@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/productPreviewCard/static/css/main.0a53ff75.css",
+    "main.js": "/productPreviewCard/static/js/main.8aa43e79.js",
+    "static/js/787.851c7412.chunk.js": "/productPreviewCard/static/js/787.851c7412.chunk.js",
+    "static/media/image-product-desktop.jpg": "/productPreviewCard/static/media/image-product-desktop.c96d43af17111fe78e96.jpg",
+    "static/media/image-product-mobile.jpg": "/productPreviewCard/static/media/image-product-mobile.113818bc746dc8e64ffb.jpg",
+    "index.html": "/productPreviewCard/index.html",
+    "static/media/icon-cart.svg": "/productPreviewCard/static/media/icon-cart.9606ad84b7565a3f523f9429396f8066.svg",
+    "main.0a53ff75.css.map": "/productPreviewCard/static/css/main.0a53ff75.css.map",
+    "main.8aa43e79.js.map": "/productPreviewCard/static/js/main.8aa43e79.js.map",
+    "787.851c7412.chunk.js.map": "/productPreviewCard/static/js/787.851c7412.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a53ff75.css",
+    "static/js/main.8aa43e79.js"
+  ]
+}
