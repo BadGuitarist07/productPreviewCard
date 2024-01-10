@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --imageCard: url('../assets/images/image-product-desktop.jpg');
+    --imageCardMobile: url('../assets/images/image-product-mobile.jpg');
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    
+    --darkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    
+    @font-face {
+        font-family: 'Fraunces', serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.all-card-flex {
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    box-shadow: 8px 8px 30px 1px rgba(0, 0, 0, 0.463);
+}
+
+.img-card {
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    background-image: var(--imageCard);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all-text-card-flex {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    padding-left: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 0 20px 20px 0;
+}
+
+#text-card-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: var(--DarkGrayishBlue);
+}
+
+#main-card-title {
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 80%;
+}
+
+#text-card-txt {
+    width: 95%;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    line-height: 2rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 500;
+}
+
+.price-card {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.price-card h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--darkCyan);
+}
+
+.price-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--DarkGrayishBlue);
+}
+
+#button {
+    width: 95%;
+    background-color: var(--darkCyan);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 15px 15px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+#button:hover {
+    background-color: var(--darkBlue);
+    transform: scale(1.05);
+}
+
+#span-img {
+    margin: auto;
+    height: 30px;
+    width: 100%;
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+
+    .all-card-flex {
+        flex-direction: column;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .img-card {
+        border-radius: 0;
+        width: 100%;
+        background-image: var(--imageCard);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    
+    .all-text-card-flex {
+        height: 70vh;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 767px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .all-card-flex {
+        flex-direction: column;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .img-card {
+        border-radius: 0px 0px 0px 0px;
+        height: 30vh;
+        background-position: center;
+    }
+    
+    .all-text-card-flex {
+        border-radius: 0px 0px 0px 0px;
+        height: 70vh;
+    }
+    
+    #main-card-title {
+        font-size: 2.5rem;
+    }
+    
+    #text-card-txt {
+        font-size: 1.3rem;
+    }
+    
+    .price-card h2 {
+        font-size: 2.5rem;
+    }
+    
+    .price-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    #button {
+        font-size: 1.6rem;
+    }
+}
